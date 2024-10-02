@@ -11,7 +11,7 @@ from app.rectangle import Rectangle
 from app.models import Profile
 
 
-class TestRectange(TestCase):
+class TestRectangle(TestCase):
     def test_rectangle_instance(self):
         """Tests items (length and width) of rectangle instance"""
         rectangle = Rectangle(length=20, width=10)
