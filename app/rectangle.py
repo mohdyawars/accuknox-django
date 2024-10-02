@@ -1,4 +1,6 @@
 class Rectangle:
+    """A class to represent a rectangle."""
+
     length: int
     width: int
 

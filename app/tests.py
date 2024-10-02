@@ -12,6 +12,8 @@ from app.models import Profile
 
 
 class TestRectangle(TestCase):
+    """Test case for Rectangle class in app/rectangle.py"""
+
     def test_rectangle_instance(self):
         """Tests items (length and width) of rectangle instance"""
         rectangle = Rectangle(length=20, width=10)
@@ -25,6 +27,8 @@ class TestRectangle(TestCase):
 
 
 class TestSignalsSynchronicity(TestCase):
+    """Test case for signals in app/models.py"""
+
     def test_signals_are_synchronous(self):
         """Tests signals are synchronous"""
         # call create-user api and collect logs
@@ -47,6 +51,8 @@ class TestSignalsSynchronicity(TestCase):
 
 
 class TestSignalsThread(TestCase):
+    """Test case for signals in app/models.py"""
+
     def test_signals_runs_in_same_thread_as_caller(self):
         """Tests that signals runs in the same thread as the caller"""
 
@@ -70,6 +76,8 @@ class TestSignalsThread(TestCase):
 
 
 class TestSignalTransaction(TestCase):
+    """Test case for signals in app/models.py"""
+
     def test_signals_do_not_run_in_as_transaction_as_caller(self):
         """Tests that signals do not runs in same DB transaction as caller"""
 

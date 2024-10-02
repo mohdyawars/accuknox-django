@@ -4,6 +4,7 @@ from rest_framework import serializers
 
 
 class UserSerializer(serializers.ModelSerializer):
+    """Serializer for User model with username and password fields for create API view"""
 
     password = serializers.CharField(write_only=True)
 
